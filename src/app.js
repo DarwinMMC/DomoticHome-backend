@@ -1,12 +1,12 @@
-import express from 'express';
+const express = require('express');
 const app = express();
-import router from './routes/temperature';
+const router = require('./routes/temperature');
 
-import morgan from 'morgan';
+const morgan = require('morgan');
 
 /** middlewares */
 app.use(morgan('dev'));
 
 app.use(router);
 
-export default app;
+module.exports = app;
