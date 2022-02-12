@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const router = require('./routes/temperature');
+const router = require('./routes');
 
 const morgan = require('morgan');
 

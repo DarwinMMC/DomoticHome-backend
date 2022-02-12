@@ -1,7 +1,7 @@
 const serial = require('../models/temperature');
 const controller = {
-  getTemperature: () => {
-
+  getTemperature: (req, res) => {
+    res.status(200).send('30ºC');
   },
 };
 
